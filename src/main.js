@@ -1,8 +1,14 @@
-const a = 3;
-const b = 2;
+const FizzBuzz = (num) => {
+  if (num === 0) return 0;
+  if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+  if (num % 3 === 0) return 'Fizz';
+  if (num % 5 === 0) return 'Buzz';
 
-const c = 'sdafasdfasdfasdfasdfasdfasdfasdfasdfasdfafgfghfgjhghjhgjfgjhhjhgjghjghjghjghjfghjghjghjhgg';
+  return num;
+};
 
-const soma = (a1, b1, c1) => a1 + b1 + c1;
+function foo() {
+  return 'bla';
+}
 
-soma(a, b, c);
+export default FizzBuzz;
